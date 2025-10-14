@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>About – Rogue Linings</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head><body>
+<div class="about-grid"><img alt="Rogue Linings logo" class="brand-logo" src="assets/img/logo.png"/></div><header class="site-header">
+<div class="container header-inner">
+<div aria-label="Rogue Linings logo" class="brand">
+<a aria-label="Go to Homepage" class="brand-top-link" href="/">Home</a>
+<a aria-label="Ultimate Linings" class="brand-ul-link" href="https://www.ultimatelinings.com" rel="noopener" target="_blank">UL</a>
+</div>
+<nav aria-label="Main" class="nav">
+<a aria-current="page" href="/about.html">About</a>
+<a href="/gallery.html">Gallery</a>
+<a href="/pricing.html">Pricing</a>
+<a href="/faqs.html">FAQs</a>
+<a class="cta" href="/contact.html">Contact</a>
+</nav>
+<div class="header-cta">
+<a href="tel:+15412004903">541-200-4903</a>
+<small><a href="https://www.roguelinings.com" rel="noopener" target="_blank">roguelinings.com</a></small>
+</div>
+</div>
+</header>
+<section class="container section">
+<h1>About Us</h1>
+<p><strong>Trusted Training. Superior Quality.</strong> Your vehicle deserves the best protection. That’s why we’ve partnered with Ultimate Linings, a leader in spray‑on protective coatings. With professional training and certification, we ensure every job meets the highest standards of strength, durability, and appearance.</p>
+<div class="about-grid">
+<img alt="Professional spray application" src="assets/img/new4.jpg"/>
+<img alt="Industrial coatings" src="assets/img/stock5.jpg"/>
+</div>
+</section>
+<section class="container section about-ul">
+<h2>Ultimate Linings Training &amp; Partnership</h2>
+<p>Ultimate Linings offers comprehensive polyurea factory training programs that include hands‑on experience, best practices, advanced techniques, and troubleshooting guidance. Training can be delivered at their state‑of‑the‑art spray lab or on‑site at your facility, tailored to specific needs and built to ensure confidence in applying their coatings. The goal is to help contractors and applicators advance their skills and grow their business.</p>
+<ul>
+<li><strong>Hands‑on learning:</strong> Real‑world polyurea application with guidance from experienced professionals.</li>
+<li><strong>Expert guidance:</strong> A team with 200+ years of combined experience in polyurea and equipment.</li>
+<li><strong>Customization:</strong> Programs tailored for newcomers or pros optimizing their process.</li>
+<li><strong>Equipment &amp; maintenance:</strong> Help with equipment selection, setup, and maintenance.</li>
+<li><strong>On‑site support:</strong> Training available at your facility, with ongoing technical support.</li>
+<li><strong>Certification:</strong> Earn certification to stand out in the industry.</li>
+</ul>
+</section>
+<section class="container section">
+<h2>Coating Highlights</h2>
+<div class="cards">
+<article class="card"><h3>Performance</h3><p><!-- TODO: From brochure: add key performance claims (e.g., abrasion resistance, chemical resistance). --></p></article>
+<article class="card"><h3>Applications</h3><p><!-- TODO: From brochure: list primary use‑cases (truck beds, fleet, marine, industrial). --></p></article>
+<article class="card"><h3>Process</h3><p><!-- TODO: From brochure: recommended surface prep, cure/return‑to‑service guidance. --></p></article>
+<article class="card"><h3>Warranty</h3><p><!-- TODO: From brochure: include warranty terms or coverage details, if provided. --></p></article>
+</div>
+</section>
+<footer class="site-footer"><div class="container">© <span id="y"></span> Rogue Linings • 590 Mason Way, Medford, OR 97501 • 541-200-4903</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script defer="" src="assets/js/site.js"></script>
+<section id="ultimate-linings-training"><h2>Ultimate Linings Training &amp; Certification</h2><p>Ultimate Linings offers comprehensive polyurea factory training programs that include hands-on experience, best practices, advanced techniques, and troubleshooting guidance. Training can be delivered at their state-of-the-art spray lab or on-site at the customer's facility. The goal is to help contractors and applicators advance their skills and grow their business.</p><ul><li>Hands-on learning with real spray equipment and materials.</li><li>Expert guidance from a team with 200+ years of combined experience.</li><li>Customized programs for new and advanced applicators.</li><li>Equipment selection, setup, and maintenance support.</li><li>On-site instruction available with ongoing technical support.</li><li>Certification upon completion to stand out in the industry.</li></ul></section><script>
+        (function setActiveNav(){
+          try{
+            var path = location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.nav a').forEach(function(a){
+              var href = a.getAttribute('href');
+              if(href && href.indexOf(path) !== -1){
+                a.classList.add('active');
+              } else {
+                a.classList.remove('active');
+              }
+            });
+          }catch(e){}
+        })();
+        </script></body></html>

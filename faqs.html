@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>FAQs – Rogue Linings</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head><body>
+<header class="site-header">
+<div class="container header-inner">
+<div aria-label="Rogue Linings logo" class="brand">
+<img alt="Rogue Linings logo" class="brand-logo" src="assets/img/logo.png"/>
+<a aria-label="Go to Homepage" class="brand-top-link" href="/">Home</a>
+<a aria-label="Ultimate Linings" class="brand-ul-link" href="https://www.ultimatelinings.com" rel="noopener" target="_blank">UL</a>
+</div>
+<nav aria-label="Main" class="nav">
+<a href="/about.html">About</a>
+<a href="/gallery.html">Gallery</a>
+<a href="/pricing.html">Pricing</a>
+<a aria-current="page" href="/faqs.html">FAQs</a>
+<a class="cta" href="/contact.html">Contact</a>
+</nav>
+<div class="header-cta">
+<a href="tel:+15412004903">541-200-4903</a>
+<small><a href="https://www.roguelinings.com" rel="noopener" target="_blank">roguelinings.com</a></small>
+</div>
+</div>
+</header>
+<section class="container section">
+<h1>FAQs</h1>
+<details class="details"><summary>How long does a bed liner take?</summary><p>Typical turnaround is X–Y hours.</p></details>
+<details class="details"><summary>What colors are available?</summary><p>Black standard, custom colors by request.</p></details>
+<details class="details"><summary>Do you offer warranties?</summary><p>Describe your warranty and what it covers.</p></details>
+</section>
+<footer class="site-footer"><div class="container">© <span id="y"></span> Rogue Linings • 590 Mason Way, Medford, OR 97501 • 541-200-4903</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script defer="" src="assets/js/site.js"></script>
+<script>
+        (function setActiveNav(){
+          try{
+            var path = location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.nav a').forEach(function(a){
+              var href = a.getAttribute('href');
+              if(href && href.indexOf(path) !== -1){
+                a.classList.add('active');
+              } else {
+                a.classList.remove('active');
+              }
+            });
+          }catch(e){}
+        })();
+        </script></body></html>
