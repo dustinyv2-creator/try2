@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Gallery – Rogue Linings</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head><body>
+<header class="site-header">
+<div class="container header-inner">
+<div aria-label="Rogue Linings logo" class="brand">
+<a aria-label="Go to Homepage" class="brand-top-link" href="/">Home</a>
+<a aria-label="Ultimate Linings" class="brand-ul-link" href="https://www.ultimatelinings.com" rel="noopener" target="_blank">UL</a>
+</div>
+<nav aria-label="Main" class="nav">
+<a href="/about.html">About</a>
+<a aria-current="page" href="/gallery.html">Gallery</a>
+<a href="/pricing.html">Pricing</a>
+<a href="/faqs.html">FAQs</a>
+<a class="cta" href="/contact.html">Contact</a>
+</nav>
+<div class="header-cta">
+<a href="tel:+15412004903">541-200-4903</a>
+<small><a href="https://www.roguelinings.com" rel="noopener" target="_blank">roguelinings.com</a></small>
+</div>
+</div>
+</header>
+<section class="container section"><h1>Gallery</h1><div class="gallery"></div></section>
+<footer class="site-footer"><div class="container">© <span id="y"></span> Rogue Linings • 590 Mason Way, Medford, OR 97501 • 541-200-4903</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script defer="" src="assets/js/site.js"></script>
+<div class="gallery-grid"><img alt="Rogue Linings logo" class="brand-logo" src="assets/img/logo.png"/><img alt="Gallery image" loading="lazy" src="assets/img/new1.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/new2.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/new3.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/new4.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/new5.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/new6.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/new7.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/stock1.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/stock2.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/stock3.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/stock4.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/stock5.jpg"/><img alt="Gallery image" loading="lazy" src="assets/img/stock6.jpg"/></div><script>
+        (function setActiveNav(){
+          try{
+            var path = location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.nav a').forEach(function(a){
+              var href = a.getAttribute('href');
+              if(href && href.indexOf(path) !== -1){
+                a.classList.add('active');
+              } else {
+                a.classList.remove('active');
+              }
+            });
+          }catch(e){}
+        })();
+        </script></body></html>
